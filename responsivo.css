@@ -1,0 +1,347 @@
+/* Notebook: 768px até 1200px */
+
+
+
+
+/* Tablets: 601px até 1094px */
+
+@media (max-width: 1094px){
+    .topo2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardEquipe{
+        width: 34%;
+    }
+
+    .cardEquipe img{
+        width: 100%;
+    }
+
+    .orgEquipe{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .btnRedes {
+        max-width: 50px;
+        width: 100%;
+        height: 70px;
+        padding: 5px;
+    }
+
+    .infoAcademia img {
+        width: 100%;
+    }
+
+    .destaque img {
+        width: 20%;
+    }
+}
+
+
+
+/* Smartphones: 0px até 600px */
+
+@media not all and (max-width: 600px) {
+
+    .abrirMenu,
+    .fecharMenu {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* SEÇÃO TOPO 1 */
+    .topo1 {
+        background-color: #34495e;
+        padding: 2%;
+        flex-direction: column;
+    }
+
+    .topo1 a {
+        margin: 5px 0px;
+    }
+
+    /* FIM DA SEÇÃO TOPO 1 */
+
+    /* SEÇÃO TOPO 2 */
+
+    .topo2 {
+        padding: 2%;
+        flex-direction: row;
+    }
+
+
+    .menu {
+        background-color: rgba(241, 196, 15, 0.8);
+        height: 100%;
+        position: fixed;
+        z-index: 10;
+        width: 50%;
+        max-width: 300px;
+        top: 0;
+        margin: 0;
+        right: -300px;
+        transition: right 0.5s ease-out;
+    }
+
+    .menuMobile .menu {
+        right: 0px;
+    }
+
+    .abrirMenu {
+        background: url(./img/abrirMenu.png);
+        background-size: cover;
+        padding: 20px;
+        border: 0;
+        display: block;
+    }
+
+    .fecharMenu {
+        background: url(./img/fecharMenu.png);
+        background-size: cover;
+        padding: 20px;
+        border: 0;
+        display: block;
+        width: 0%;
+        padding: 10%;
+        margin: 4%;
+    }
+
+    .menu {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .menu ul {
+        flex-direction: column;
+
+        margin: 20px;
+    }
+
+    .menu ul li {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu ul li a {
+        font-size: 30px;
+        margin-right: 60px;
+    }
+
+    .menu a:hover {
+        color: aqua;
+    }
+
+    .ativo {
+        color: aqua;
+    }
+
+    /* FIM DA SEÇÃO TOPO 2 */
+    .banner {
+        display: none;
+    }
+
+
+    /* SOBRE DA PÁGINA HOME */
+
+    .contSobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contSobre h2 {
+        margin-top: 50px;
+        font-size: 40px;
+    }
+
+    .quadros {
+        flex-direction: column;
+    }
+
+    .quadro1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .quadro1 img {
+        border-radius: 50px 50px 0px 0px;
+        width: 85%;
+        margin-right: 0px;
+    }
+
+    .quadro2 {
+        width: 85%;
+        height: auto;
+        padding: 30px;
+        border-radius: 0px 0px 50px 50px;
+        margin: 0 auto;
+    }
+
+    .quadro2 button {
+        padding: 15px 30px;
+        margin-top: 25px;
+    }
+
+    /* FIM SEÇÃO SOBRE */
+
+    /* SEÇÃO SERVICOS */
+
+    .servico1 {
+        max-width: 350px;
+        width: 100%;
+        background-color: #48c9b0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .servico1 h2 {
+        color: #34495e;
+    }
+
+    .servico1 button {
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .servico1 button:hover {
+        background-color: #f1c40f;
+
+    }
+
+    .servico1 div img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .descricaoServ {
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+
+    .descricaoServ p {
+        color: white;
+    }
+
+
+    .cardServicos {
+        display: flex;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+
+    /* FIM SEÇÃO SERVIÇOS */
+
+    /* SEÇÃO GALERIA */
+
+    .galeria .slick-center {
+        transform: scale(1);
+        padding: 0;
+    }
+
+    /* FIM SEÇÃO GALERIA */
+
+    /* SEÇÃO EQUIPE */
+
+    .orgEquipe {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    .cardEquipe {
+        max-width: 55.4%;
+        width: 100%;
+    }
+
+    .cardEquipe div img {
+        max-width: 100.5%;
+        width: 100%;
+    }
+
+    .btnRedes {
+        max-width: 50px;
+        width: 100%;
+    }
+
+    .infoAcademia a {
+        font-size: 1.2em;
+    }
+
+
+
+    /* FIM SEÇÃO EQUIPE */
+
+    /* SEÇÃO DESTAQUE */
+
+    .destaque div {
+        background: none;
+    }
+
+    .destaque img {
+        width: 30%;
+    }
+
+    .destaque {
+        background: url(./img/academia.png);
+    }
+
+    /* FIM SEÇÃO DESTAQUE */
+
+    /* SEÇÃO FOOTER */
+
+
+    .rodape section:nth-child(1) {
+        padding: 25px 0;
+    }
+
+    .rodape section div {
+        flex-direction: column;
+    }
+
+    .rodape section div {
+        width: 95%;
+    }
+
+    /* INFO ACADEMIA */
+
+    .politicas {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+
+    table {
+        margin-top: 20px;
+    }
+
+    tbody{
+        display: flex;
+        flex-direction: column;
+    }
+
+    tbody tr:nth-child(1){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* FIM SEÇÃO FOOTER */
+}
