@@ -25,8 +25,8 @@
                     <li><a href="#">Equipe</a></li>
                     <li><a href="#">Serviço</a></li>
                     <li><a href="contato.php">Contato</a></li>
-                    <button><img src="./img/user.png" alt=""></button>
                 </ul>
             </nav>
+            <button id="loginButton">Login</button>
         </div>
     </header>

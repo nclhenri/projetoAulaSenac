@@ -26,7 +26,6 @@
     <main>
         <?php require_once('conteudo/banner.php'); ?>
         <?php require_once('conteudo/sobre.php'); ?>
-        <?php require_once('conteudo/servico.php'); ?>
         <?php require_once('conteudo/galeria.php'); ?>
         <?php require_once('conteudo/equipe.php'); ?>
         <?php require_once('conteudo/destaque.php'); ?>
@@ -38,7 +37,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="./js/lity.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

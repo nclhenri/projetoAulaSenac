@@ -174,7 +174,59 @@ form div{
     justify-content: flex-end;
 }
 
+/* TELA LOGIN ADM */
 
+.bodyLogin{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 
+.loginGeral{
+    width: 100%;
+    background-color: #23475f;
+    padding: 20px;
+    border-radius: 20px;
+}
 
+.loginGeral h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+}
+
+.formLogin div label{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.formLogin div input{
+    width: 100%;
+    padding: 5px;
+}
+
+.formLogin{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.btnLogin{
+    padding: 5px;
+    font-size: 15px;
+    background-color: #ffd74c;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #23475f;
+    width: 70%;
+}
+
+main{
+    flex: 0 !important;
+}
+
+.centralBotao{
+    display: flex;
+    justify-content: center;
+}
 
