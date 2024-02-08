@@ -1,4 +1,15 @@
 <?php
+
+session_start();
+
+if (isset($_SESSION['idAluno'])) {
+    echo "!";
+} else {
+    header("Location:http://localhost/academia/");
+    exit();
+}
+
+
 $pagina = @$_GET['p'];
 ?>
 
