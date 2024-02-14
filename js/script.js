@@ -119,19 +119,18 @@ function closeModal() {
 function carregarLogin() {
 
     $('#loginForm').click(function () {
-        // var email = document.getElementById('email').value;
-        // var senha = document.getElementById('password').value;
-        var formData = $("#loginForm").serialize();
-
+        var formData = $('#loginForm').serialize();
+  
         //Enviar a solicitação - class Login
-
+  
         $.ajax({
             url: './admin/class/alunos.php',
             method: 'POST',
             data: formData,
             dataType: 'json',
             success: function (data) {
-
+  
+                console.log(data);
                 if (data.success) {
                     // Login Bem Sucedido
                     $('#msgLogin').html('<div class = "msgSuccess">' + data.message + '</div>');
@@ -142,13 +141,37 @@ function carregarLogin() {
                 }
             },
             error: function (xhr, status, error) {
-                
+  
                 console.log(error);
-
+  
             }
         })
-    })
-}
+
+        $.ajax({
+            url: './admin/class/instrutores.php',
+            method: 'POST',
+            data: formData,
+            dataType: 'json',
+            success: function (data) {
+  
+                console.log(data);
+                if (data.success) {
+                    // Login Bem Sucedido
+                    $('#msgLogin').html('<div class = "msgSuccess">' + data.message + '</div>');
+                    var idFuncionario = data.idFuncionario;
+                    window.location.href = 'http://localhost/academia/admin/index.php?p=instrutores';
+                } else {
+                    $('#msgLogin').html('<div class = "msgInvalido">' + data.message + '</div>');
+                }
+            },
+            error: function (xhr, status, error) {
+  
+                console.log(error);
+  
+            }
+        })
+    });
+  }
 
 
 // Get the modal
@@ -158,9 +181,9 @@ var modal = document.getElementById("loginModal");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal
-document.getElementById('loginBtn').addEventListener('click', function () {
-    modal.style.display = "block";
-});
+// document.getElementById('loginBtn').addEventListener('click', function () {
+//     modal.style.display = "block";
+// });
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {

@@ -2,9 +2,9 @@
 
 <?php 
 
-$pagina = @$_GET['i'];
+$pagina = @$_GET['p'];
 
-if ($pagina == '') {
+if ($pagina == 'instrutores') {
     require_once('listar.php');
 }else {
     if ($pagina == 'cadastrar') {

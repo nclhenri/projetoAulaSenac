@@ -4,7 +4,10 @@ session_start();
 
 if (isset($_SESSION['idAluno'])) {
     echo "!";
-} else {
+}elseif(isset($_SESSION['idFuncionario'])) {
+    echo "!!";
+}
+else {
     header("Location:http://localhost/academia/");
     exit();
 }
